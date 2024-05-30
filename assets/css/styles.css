@@ -39,6 +39,49 @@ header{
     /* z-index: 1000; */
 }
 
+/*Responsive*/
+
+
+@media (max-width: 900px) {
+    .header-content .img-wrapper {
+      display: none;
+    }
+  
+    .header-content {
+      justify-content: center;
+    }
+  }
+
+  
+  
+@media (max-width: 800px) {
+    .discover-content {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .discover-content .covers-image {
+      margin-top: 2rem;
+      height: 30vh;
+      width: auto;
+    }
+  }
+
+  
+@media (max-width: 900px) {
+    .join-main-section {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .join-form {
+      width: 80vw;
+      max-width: inherit;
+      margin: 2rem 0;
+    }
+  }
+  
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -115,15 +158,6 @@ nav .logo-name{
 }
 
 
-@media (max-width: 900px) {
-    .header-content .img-wrapper {
-      display: none;
-    }
-  
-    .header-content {
-      justify-content: center;
-    }
-  }
 
 .circle-1{
 
@@ -213,19 +247,6 @@ circle-3::before {
     width: 40px;
   }
 
-  
-@media (max-width: 800px) {
-    .discover-content {
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    .discover-content .covers-image {
-      margin-top: 2rem;
-      height: 30vh;
-      width: auto;
-    }
-  }
 
   /* JOIN  */
  
@@ -308,17 +329,48 @@ circle-3::before {
 }
 
 
-
-@media (max-width: 900px) {
-    .join-main-section {
-      flex-direction: column;
-      justify-content: center;
-    }
+/* Style du footer */
+.main-footer {
+    background-color: #202027;
+    color: white;
+    padding: 20px 0;
+    font-weight: bold;
+    width: 100%;
+  }
   
-    .join-form {
-      width: 80vw;
-      max-width: inherit;
-      margin: 2rem 0;
-    }
+  .main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-nav ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav ul li a:hover {
+    color: #adadad;
+  }
+  
+  .social-link img {
+    width: 1em;
+    margin-right: 0.5rem;
+    vertical-align: middle;
   }
   
