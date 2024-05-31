@@ -14,9 +14,10 @@
 
 ## Technologies utilisées
 
-- HTML5
-- CSS3
+   - HTML5
+   - CSS3
 
 ## Conception du maquette :
-       -Importer le fichier figma sur figma 
+
+   -Importer le fichier figma sur figma
 

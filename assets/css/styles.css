@@ -42,42 +42,53 @@ header{
 /*Responsive*/
 
 
-@media (max-width: 900px) {
-    .header-content .img-wrapper {
-      display: none;
+@media (max-width: 800px) {
+    .header-content  {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      /* padding-top: 20px; */
+      gap: 50px;
     }
   
-    .header-content {
-      justify-content: center;
+    .header-content .left img {
+      width: 300px;
+      margin-right:20px ;
+    }
+    .header-content .right {
+    
+      margin-left:200px ;
     }
   }
 
-  
-  
 @media (max-width: 800px) {
     .discover-content {
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      margin: 0px;
     }
   
     .discover-content .covers-image {
       margin-top: 2rem;
-      height: 30vh;
-      width: auto;
+      height: 40vh;
+      width: 300px;
     }
   }
 
   
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .join-main-section {
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
     }
   
-    .join-form {
-      width: 80vw;
-      max-width: inherit;
-      margin: 2rem 0;
+    .join-main-section .join-form {
+      width: 100%;
+      /* max-width: inherit; */
+      /* margin: 2rem 0; */
+      
     }
   }
   
@@ -167,7 +178,7 @@ nav .logo-name{
     border-radius: 50%;
     background-color: rgb(188, 58, 128, .1);
     bottom: 5vw;
-    left: 5vw;
+    left: 1vw;
     z-index: -1;
 }
  
@@ -177,24 +188,29 @@ nav .logo-name{
     height: 10vw;
     border-radius: 50%;
     background-color: rgb(52, 87, 178, .1);
-    top: 40vh;
-    left: 50vw;
+    top: 30vh;
+    left: 42vw;
     z-index: -1;
 
 }
-/* 
+
+ 
 .circle-3{
     position: absolute;
     overflow: hidden;
-    width: 45vw;
-    height: 45vw;
+    width: 40vw;
+    height: 40vw;
+    /* border-radius: 50%; */
+    /* background-color: rgb(52, 87, 178, .1); */
+    /* bottom: -60px;
+    right: -180px; */
     bottom: 0;
     right: 0;
     z-index: -1;
 } 
 
 
-circle-3::before {
+.circle-3::before {
     content: '';
     transform: translate(40%, 40%);
     position: absolute;
@@ -202,7 +218,7 @@ circle-3::before {
     width: 100%;
     border-radius: 50%;
     background-color: rgb(52, 87, 178, .1);
-  } */
+  }
 
 
 /* Discover */
@@ -218,6 +234,8 @@ circle-3::before {
 }
 
 .discover-content{
+    margin-top: 50px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
@@ -225,6 +243,8 @@ circle-3::before {
 
 .icon-section {
     display: flex;
+    /* justify-content: space-evenly; */
+    gap: 50px;
   }
 
 
@@ -243,10 +263,15 @@ circle-3::before {
 }
 
 
-.icon img {
+.icon-section .icon img {
     width: 40px;
   }
 
+  .right-call-to-action img{
+    
+    width: 450px;
+    
+  }
 
   /* JOIN  */
  
@@ -255,7 +280,7 @@ circle-3::before {
 .join-main-section{
     display: flex;
     justify-content: space-evenly;
-    /* align-items: center; */
+    align-items: center;
     
 }
 
@@ -263,8 +288,8 @@ circle-3::before {
   
     font-weight: bold;
     margin: 0;
-    margin-top: 100px;
     font-size: 40px;
+
 }
 
 .join-main-section span{
@@ -278,12 +303,12 @@ circle-3::before {
     width: 40%;
     height: 80%;
     background-color: #202027;
-
     align-items: center;
     padding:50px 50px;
     border-radius: 20px;
     margin-top: 80px;
-} 
+
+  } 
 
 .join-form .form-group{
     margin-bottom: 20px;
@@ -311,9 +336,7 @@ circle-3::before {
 
 }
 
-
-
- .join-form .form-group .btn{
+.join-form .form-group .btn{
     
     background-color: #1762A7;
     color: #ffffff;
@@ -336,13 +359,14 @@ circle-3::before {
     padding: 20px 0;
     font-weight: bold;
     width: 100%;
+    margin-top: 80px;
   }
   
   .main-footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
   }
