@@ -39,10 +39,13 @@ header{
     /* z-index: 1000; */
 }
 
+
+
 /*Responsive*/
 
+@media (max-width: 900px) {
 
-@media (max-width: 800px) {
+  /*  Media query header*/
     .header-content  {
       display: flex;
       flex-direction: column;
@@ -50,23 +53,25 @@ header{
       /* padding-top: 20px; */
       gap: 50px;
     }
-  
     .header-content .left img {
       width: 300px;
-      margin-right:20px ;
+      /* margin-right:20px ; */
     }
+
+
     .header-content .right {
     
       margin-left:200px ;
     }
-  }
-
-@media (max-width: 800px) {
+       /* Media query Discover */
+  
     .discover-content {
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin: 0px;
+     
     }
   
     .discover-content .covers-image {
@@ -74,24 +79,163 @@ header{
       height: 40vh;
       width: 300px;
     }
-  }
 
-  
-@media (max-width: 800px) {
-    .join-main-section {
+     
+    .left-call-to-action .title{
+      font-size: 28px;
+      
+    }
+
+    /* Media query Join */
+
+    #join .join-main-section {
+      display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
     }
   
-    .join-main-section .join-form {
+    #join .join-main-section .join-form {
       width: 100%;
       /* max-width: inherit; */
       /* margin: 2rem 0; */
       
     }
-  }
+
+}
+
   
+@media (max-width: 600px) {
+
+
+     /*  Media query header*/
+    .header-content  {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      /* padding-top: 20px; */
+      gap: 50px;
+    }
+    .header-content .left img {
+      width: 200px;
+      /* margin-right:20px ; */
+    }
+
+
+    .header-content .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left:100px ;
+      font-size: 12px;
+    }
+
+        
+    #section-header .btn{
+      margin-right: 40px;
+    }
+
+
+      .discover-content .left-call-to-action  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 90%; */
+      }
+
+
+      .left-call-to-action .title{
+        font-size: 24px;
+        
+      }
+
+      .right-call-to-action .covers-image {
+        
+        /* margin-right: 80px; */
+        height: 40vh;
+        width: 300px;
+      }
+
+      #join .join-main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      #discover-main .discover-content p{
+        font-size: 12px;
+      }
+
+      #join .join-main-section .join-title{
+        margin-top: 30px;
+      }
+
+      #join .join-main-section .join-form {
+
+        width: 100%;
+        /* max-width: inherit; */
+        /* margin: 2rem 0; */
+        
+      }
+    
+      .main-footer .container {
+        flex-direction: column;
+        width: 100%;    
+      }
+}
+
+
+@media (max-width: 400px) {
+  .discover-content .left-call-to-action  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 90%; */
+  }
+
+
+  .left-call-to-action .title{
+    font-size: 16px;
+    
+  }
+
+  #discover-main .discover-content .right-call-to-action .covers-image {
+    
+      height: 40vh;
+      width: 300px;
+  }
+
+  #join .join-main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  #join .join-main-section .join-title{
+    margin-top: 30px;
+  }
+
+  #join .join-main-section .join-form {
+
+    width: 100%;
+    /* max-width: inherit; */
+    /* margin: 2rem 0; */
+    
+  }
+
+  .main-footer .container {
+    flex-direction: column;
+    width: 100%;    
+  }
+}
+
+
 
 nav{
     display: flex;
@@ -137,7 +281,7 @@ nav .logo-name{
 
 .title{
  
- font-weight: 500;
+  font-weight: 500;
   font-size: 3em;
   margin-bottom: 1rem;
   margin-top: 0;
@@ -225,7 +369,7 @@ nav .logo-name{
 
 
 #discover-main{
-  margin: 80px;
+  margin-top: 80px;
 }
 
 .left-call-to-action , .right-call-to-action{

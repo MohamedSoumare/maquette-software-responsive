@@ -2,7 +2,7 @@
 
 ## Vue d'ensemble
 
-   Software est un projet de site web responsive qui présente une plateforme de découverte musicale appelée Soundwave. Le site comprend des pages pour découvrir de nouvelles musiques et rejoindre la plateforme. Le design est entièrement responsive, garantissant une expérience fluide sur divers appareils et les utilisateurs.Objectifs est de rendre le site responsible et de creer des interfaces mobile responsive sur figma.
+   Software est un projet de site web responsive qui présente une plateforme de découverte musicale appelée Soundwave. Le site comprend des pages pour découvrir de nouvelles musiques et rejoindre la plateforme. Le design est entièrement responsive, garantissant une expérience fluide sur divers appareils et les utilisateurs.Objectifs est de rendre le site responsible et de creer des interfaces mobile responsive sur figma et faire l'intégration de la maquette.
 
 
 ## Fonctionnalités
